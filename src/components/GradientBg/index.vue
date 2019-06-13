@@ -18,7 +18,7 @@ export default {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: #0086b3;
+  background: #00b386;
   top: 0px;
   left: 0px;
   z-index: 0;
@@ -42,10 +42,10 @@ export default {
     animation: imageAnimation 48s linear infinite 0s;
 
     &:nth-child(1) {
-      background-image: url("~@/assets/login/bg-1.jpeg");
+      background-image: url("~@/assets/login/bg-1.jpg");
     }
     &:nth-child(2) {
-      background-image: url("~@/assets/login/bg-2.jpeg");
+      background-image: url("~@/assets/login/bg-2.jpg");
       -webkit-animation-delay: 12s;
       -moz-animation-delay: 12s;
       -o-animation-delay: 12s;
@@ -53,7 +53,7 @@ export default {
       animation-delay: 12s;
     }
     &:nth-child(3) {
-      background-image: url("~@/assets/login/bg-3.jpeg");
+      background-image: url("~@/assets/login/bg-3.jpg");
       -webkit-animation-delay: 24s;
       -moz-animation-delay: 24s;
       -o-animation-delay: 24s;
@@ -61,7 +61,7 @@ export default {
       animation-delay: 24s;
     }
     &:nth-child(4) {
-      background-image: url("~@/assets/login/bg-1.jpeg");
+      background-image: url("~@/assets/login/bg-1.jpg");
       animation-delay: 36s;
     }
   }

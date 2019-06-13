@@ -8,14 +8,14 @@
       <div class="l hp100 left-ct">
         <div class="text-white cst">
           <p class="f30">Welcome!</p>
-          <h2 class="f30 n">在线医院管理系统</h2>
+          <h2 class="f30 n">后台管理系统</h2>
         </div>
       </div>
       <div class="l hp100 bg-white right-ct">
         <h2 class="f30 n text-light login-tie">Login</h2>
         <el-form ref="loginForm" :model="loginForm" class="ruleForm">
           <el-form-item>
-            <el-input ref="username" v-model="loginForm.userName" type="text" placeholder="用户" maxlength="12" auto-complete="on" />
+            <el-input ref="username" v-model="loginForm.username" type="text" placeholder="用户" maxlength="12" auto-complete="on" />
           </el-form-item>
           <el-form-item>
             <el-input ref="password" v-model="loginForm.password" type="password" placeholder="密码" maxlength="18" auto-complete="on" />
@@ -27,7 +27,7 @@
             </span>
           </el-form-item>
           <el-form-item>
-            <el-button type="primary" class="pct100" @click="submitForm">登录</el-button>
+            <el-button type="success" class="pct100" @click="submitForm">登录</el-button>
           </el-form-item>
         </el-form>
       </div>
@@ -70,7 +70,7 @@ export default {
       this.codeRandom = new Date().getTime()
     },
     submitForm(formName) { // 提交验证
-      if (!this.loginForm.userName) {
+      if (!this.loginForm.username) {
         this.$message.warning('请填写您的用户名~')
         return
       }
@@ -166,7 +166,7 @@ export default {
       bottom: 0;
       left: 0;
       z-index: -1;
-      background: linear-gradient(to bottom right, #067fcd, #00427e);
+      background: linear-gradient(to bottom right, #06cda2, #007e0a);
       opacity:.8;
    }
    .cst{
